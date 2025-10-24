@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ChatInput } from './components/ChatInput';
 import { MessageList, Message } from './components/MessageList';
 import { api } from './services/api';
+import '@crayonai/react-ui/styles/index.css';
 
 function App() {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -67,9 +68,8 @@ function App() {
           </div>
           <div className="flex items-center gap-2">
             <div
-              className={`w-3 h-3 rounded-full ${
-                isConnected ? 'bg-green-500' : 'bg-red-500'
-              }`}
+              className={`w-3 h-3 rounded-full ${isConnected ? 'bg-green-500' : 'bg-red-500'
+                }`}
             />
             <span className="text-sm text-gray-600">
               {isConnected ? 'Connected' : 'Disconnected'}

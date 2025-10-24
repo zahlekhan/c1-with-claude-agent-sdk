@@ -17,7 +17,7 @@ app.use(express.json());
 const agent = new ClaudeWebAgent({
   anthropicApiKey: process.env.ANTHROPIC_API_KEY || '',
   openaiApiKey: process.env.OPENAI_API_KEY || '',
-  thesysBaseURL: process.env.THESYS_API_BASE_URL || 'https://api.thesys.dev/v1',
+  thesysBaseURL: 'https://api.thesys.dev/v1/visualize',
 });
 
 // Health check endpoint
