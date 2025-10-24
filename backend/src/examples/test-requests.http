@@ -1,0 +1,42 @@
+### Health Check
+GET http://localhost:3001/health
+
+###
+
+### Basic Chat - Simple Message
+POST http://localhost:3001/api/chat
+Content-Type: application/json
+
+{
+  "message": "hi"
+}
+
+###
+
+### Chat - Request Visualization
+POST http://localhost:3001/api/chat
+Content-Type: application/json
+
+{
+  "message": "Create a flowchart showing the steps of user authentication with username and password"
+}
+
+###
+
+### Chat - Diagram Request
+POST http://localhost:3001/api/chat
+Content-Type: application/json
+
+{
+  "message": "Show me a diagram of a microservices architecture with API gateway, auth service, and database"
+}
+
+###
+
+### Chat - Chart Request
+POST http://localhost:3001/api/chat
+Content-Type: application/json
+
+{
+  "message": "Visualize the performance comparison between different sorting algorithms"
+}
